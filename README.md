@@ -8,7 +8,7 @@
 ## contributing to the Project
 
 Clone the project
-> git clone https://github.com/cest-nitr/GatePortal.git
+> git clone https://github.com/cest-nitr/gateportal__.git
 
 First pull
 > git pull

@@ -1,12 +1,10 @@
 import React from 'react'
-import Navbar from './components/Navbar';
-import Router from './components/Router';
-
+import './Quiz.css';
+import Quiz from './components/Quiz';
 const App = () => {
   return (
     <>
-    <Navbar />
-    <Router />
+    <Quiz/>
     </>
   )
 }

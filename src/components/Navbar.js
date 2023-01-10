@@ -34,11 +34,11 @@ const Navbar = () => {
         <ul className='flex font-bold gap-5'>
             {
                 registered ? 
-                <li><button onClick={() => setRegistered(!registered)} className='bg-white text-[#2C74B3] px-2 p-1 shadow-md rounded'><Link to='/logout'>Log out</Link></button></li>
+                <li><button onClick={() => setRegistered(!registered)} className='bg-white text-[#2C74B3] px-2 p-1 shadow-md rounded hover:bg-[#0A2647] hover:text-white hover:shadow-lg hover:p-2'><Link to='/logout'>Log out</Link></button></li>
                 :
                 <>
-                <li><button className='bg-white text-[#2C74B3] px-2 p-1 shadow-md rounded'><Link to='/login'>Login</Link></button></li>
-                <li><button className='bg-white text-[#2C74B3] px-2 p-1 shadow-md rounded'><Link to='/signin'>Sign in</Link></button></li>
+                <li><button className='bg-white text-[#2C74B3] px-2 p-1 shadow-md rounded hover:bg-[#0A2647] hover:text-white hover:shadow-lg hover:p-2'><Link to='/login'>Login</Link></button></li>
+                <li><button className='bg-white text-[#2C74B3] px-2 p-1 shadow-md rounded hover:bg-[#0A2647] hover:text-white hover:shadow-lg hover:p-2'><Link to='/signin'>Sign in</Link></button></li>
                 </>
             }
         </ul>

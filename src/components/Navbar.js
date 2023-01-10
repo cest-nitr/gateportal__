@@ -6,7 +6,7 @@ const Navbar = () => {
     const [toggle, setToggle] = useState(false);
     const [registered, setRegistered] = useState(true);
   return (
-    <div className='bg-[#2C74B3] p-2 text-white'>
+    <div className='bg-[#2C74B3] px-2 py-1 text-white'>
         <div className='max-w-[1240px] items-center py-2 mx-auto flex justify-between'>
         <div className='text-3xl font-bold'>
             <img className='w-12' src={logo}></img>
@@ -20,14 +20,12 @@ const Navbar = () => {
         {/* responsive nav */}
         <ul className={`font-bold fixed bg-[#2C74B3] text-white w-screen left-0 top-0 py-2 text-xl flex-row justify-center items-center duration-500 z-[1] ${toggle ? 'top-[81px]' : 'top-[-100%]'}`}>
             <li className='my-1 text-center'><Link to='/'>Home</Link></li>
-            <li className='my-1 text-center'><Link to='/'>About</Link></li>
             <li className='my-1 text-center'><Link to='/profile'>Profile</Link></li> 
             <li className='my-1 text-center'><Link to='/Contest'>Contest</Link></li>
         </ul>
         {/* responsive nav  */}
         <ul className='hidden md:flex font-bold text-white gap-5'>
             <li><Link to='/'>Home</Link></li>
-            <li><Link to='/'>About</Link></li>
             <li><Link to='/profile'>Profile</Link></li>
             <li><Link to='/Contest'>Contest</Link></li>
         </ul>

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+.quizbody{
+  background:#2C74B3;
+  min-height: 100vh;
+}
+.utils{
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.utils > *{
+  width: max-content;
+  background-color:#144272;
+  color:black;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-top: 10vh;
+  margin-right: 10vw;
+  border: 2px solid white;
+  font-size: large;
+  transition: all 0.3s ease-in-out;
+}
+.utils > *:hover{
+  background-color: #0A2647;
+  color: white;
+  transform: translate(2px,0);
+  cursor: pointer;
+}
+.timer{
+  color: white;
+  background-color: #144272;
+}
+.timer:hover{
+  cursor: default;
+  transform: translate(0,0);
+  background-color: #144272;
+  color: white;
+}
+.quiz-box{
+  width:60vw;
+  margin: 5vh auto 20px;
+  background: white;
+  border:2px solid #0A2647;
+  border-radius: 15px;
+  padding: 20px;
+}
+.question-box{
+  width: fit-content;
+  margin: 20px auto 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  background-color: #205295;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+.question-box > *{
+  margin: 20px;
+}
+.question-title{
+  margin-left: 0;
+}
+.question-num{
+  margin-right: 10px;
+}
+.answer-box{
+  margin-top: 10px;
+  padding: 20px;
+}
+.answer-box > ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.answer-box > ul > *{
+  overflow: scroll;
+  margin: 20px;
+  width: fit-content;
+  min-width: 15vw;
+  padding: 10px 20px;
+  background-color: #205295;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.answer-box > ul > *::-webkit-scrollbar {
+  display: none;
+}
+
+.answer-box > ul > *:hover{
+  background-color: #2C74B3;
+  transform: translate(0,-2px);
+  cursor: pointer;
+  box-shadow: 2px 4px 2px rgb(205, 202, 202);
+}
+.buttons{
+  margin: 0 auto;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.buttons > *{
+  width: max-content;
+  border: 1px solid white;
+  background-color: #144272;
+  color:white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: large;
+  transition: all 0.3s ease-in-out;
+}
+.buttons > *:hover{
+  background-color: #0A2647;
+  transform: translate(0,-2px);
+  cursor: pointer;
+}

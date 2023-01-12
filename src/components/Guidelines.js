@@ -15,7 +15,7 @@ const Guidelines = () => {
   ];
   return (
     <>
-    <div className='w-full bg-[#205295] text-white h-screen p-4 flex justify-center bottom-0'>
+    <div className='w-full bg-[#205295] text-white h-screen p-4 flex justify-center items-center bottom-0'>
       <div className='w-9/12 bg-white h-3/4 rounded text-[#205295] p-2 grid grid-flow-col'>
         <div className="guidelines m-2 p-2 rounded">
           <h1 className='p-1 my-1 text-lg text-center'>Guidelines for the contest</h1>

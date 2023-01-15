@@ -1,26 +1,29 @@
 import React from 'react'
-
 const Login = () => {
   return (
-    <div>
-     <form action="/" className='p-2 pt-4 flex flex-col justify-center w-10/12'>
-     <h1 className='text-center text-xl'>Log in</h1>
-                <div className='mt-4'>
-                  <label htmlFor="name">User name</label>
-                  <input type="text" id='name' required className='w-full border border-[#205295] px-2 py-2 rounded-lg shadow-sm' />
-                </div>
-                <div className='mt-4'>
-                  <label htmlFor="email">Email address</label>
-                  <input type="email" id='email' required className='w-full border border-[#205295] px-2 py-2 rounded-lg shadow-sm' />
-                </div>
-                <div className='mt-4'>
-                  <label htmlFor="password">Email address</label>
-                  <input type="password" id='password' required className='w-full border border-[#205295] px-2 py-2 rounded-lg shadow-sm' />
-                </div>
-
-                <button type='submit' className='bg-[#205295] rounded p-2 w-1/4 mt-4 text-white text-center text-sm'>Register</button>
-              </form>
-    </div>
+    <>
+      <div className="grid grid-cols-1  h-screen w-full">
+        <div className='bg-[#205295] flex flex-col justify-center'>
+          <form action="/" className='max-w-[400px] w-full mx-auto p-8 rounded-lg px-8 bg-white text-[#205295]'>
+            <h2 className='text-4xl font-bold text-center'>Login</h2>
+            <div className='flex flex-col py-2 font-semibold'>
+              <label htmlFor="name">User Name</label>
+              <input type="text" className='rounded-lg border border-[#205295] mt-2 p-2 hover:text-white focus:border-blue-500 focus:bg-[#2C74B3] focus:outline-none'/>
+            </div>
+            <div className='flex flex-col py-2 font-semibold'>
+              <label htmlFor="password">Password</label>
+              <input type="password" className='rounded-lg border border-[#205295] mt-2 p-2 hover:text-white focus:border-blue-500 focus:bg-[#2C74B3] focus:outline-none'/>
+            </div>
+            <div className='flex flex-col py-2 font-semibold'>
+              <label htmlFor="password">Confirm Password</label>
+              <input type="password" className='rounded-lg border border-[#205295] mt-2 p-2 hover:text-white focus:border-blue-500 focus:bg-[#2C74B3] focus:outline-none'/>
+            </div>
+            
+            <button className='w-full my-5 py-2 bg-[#205295] text-white font-semibold rounded-lg shadow-lg hover:shadow-sm'>Login</button>
+          </form>
+        </div>
+      </div>
+    </>
   )
 }
 

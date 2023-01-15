@@ -7,9 +7,9 @@ const Score = () => {
   const wrong = 6;
   const attempted = 76;
   return (
-    <div className='w-full h-screen p-2 flex flex-col justify-center items-center'>
+    <div className='w-full h-screen p-2 flex flex-col justify-center items-center bg-[#205295]'>
       <div className='h-1/2 px-2'>
-        <div className='rounded-full p-2 bg-white w-[200px] h-[200px] text-[#2C74B3] flex flex-col text-center text-xl justify-center itmes-center'>
+        <div className='rounded-full p-2 bg-white text-[#2C74B3] w-[200px] h-[200px] flex flex-col text-center text-xl justify-center itmes-center'>
           <div className='flex justify-center items-center text-6xl'><MdDoneAll /></div>
           <div>Successfully Submitted</div>
         </div>

@@ -16,7 +16,7 @@ const Router = () => {
         <Route path='/contest' element={<Contest/>} exact></Route>
         <Route path='/contact' element={<Contact/>} exact></Route>
         <Route path='/login' element={<Login/>} exact></Route>
-        <Route path='/signup' element={<Signup/>} exact></Route>
+        <Route path='/signin' element={<Signup/>} exact></Route>
     </Routes>
   )
 }

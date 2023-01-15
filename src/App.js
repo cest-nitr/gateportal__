@@ -1,17 +1,17 @@
 import React from 'react'
 import './Quiz.css';
-import Quiz from './components/Quiz';
 import Navbar from './components/Navbar';
 import Router from './components/Router';
-import Signup from './components/Signup';
 const App = () => {
   return (
-    <>
+    <div className='min-h-screen w-full m-0 p-0 flex flex-col'>
+    <div className='h-1/5 w-full fixed'>
     <Navbar />
-    {/* <Router /> */}
-
-    <Signup />
-    </>
+    </div>
+    <div className='h-4/5 w-full'>
+    <Router />
+    </div>
+    </div>
   )
 }
 

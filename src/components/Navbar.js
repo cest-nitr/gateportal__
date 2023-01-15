@@ -4,9 +4,9 @@ import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
 import logo from '../images/CEST White Logo.png'
 const Navbar = () => {
     const [toggle, setToggle] = useState(false);
-    const [registered, setRegistered] = useState(true);
+    const [registered, setRegistered] = useState(false);
   return (
-    <div className='bg-[#2C74B3] px-2 py-1 text-white'>
+    <div className='bg-[#205295] px-2 py-1 text-white  w-full'>
         <div className='max-w-[1240px] items-center py-2 mx-auto flex justify-between'>
         <div className='text-3xl font-bold'>
             <img className='w-12' src={logo}></img>
@@ -32,11 +32,11 @@ const Navbar = () => {
         <ul className='flex font-bold gap-5'>
             {
                 registered ? 
-                <li><button onClick={() => setRegistered(!registered)} className='bg-white text-[#2C74B3] px-2 p-1 shadow-md rounded hover:bg-[#0A2647] hover:text-white hover:shadow-lg hover:p-2'><Link to='/logout'>Log out</Link></button></li>
+                <li><button onClick={() => setRegistered(!registered)} className='bg-white text-[#2C74B3] px-2 p-1 shadow-md rounded hover:bg-[#2C74B3] hover:text-white hover:shadow-lg'><Link to='/logout'>Log out</Link></button></li>
                 :
                 <>
-                <li><button className='bg-white text-[#2C74B3] px-2 p-1 shadow-md rounded hover:bg-[#0A2647] hover:text-white hover:shadow-lg hover:p-2'><Link to='/login'>Login</Link></button></li>
-                <li><button className='bg-white text-[#2C74B3] px-2 p-1 shadow-md rounded hover:bg-[#0A2647] hover:text-white hover:shadow-lg hover:p-2'><Link to='/signin'>Sign in</Link></button></li>
+                <li><button className='bg-white text-[#2C74B3] px-2 p-1 shadow-md rounded hover:bg-[#2C74B3] hover:text-white hover:shadow-lg'><Link to='/login'>Login</Link></button></li>
+                <li><button className='bg-white text-[#2C74B3] px-2 p-1 shadow-md rounded hover:bg-[#2C74B3] hover:text-white hover:shadow-lg'><Link to='/signin'>Sign in</Link></button></li>
                 </>
             }
         </ul>

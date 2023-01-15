@@ -18,8 +18,8 @@
 }
 .utils > *{
   width: max-content;
-  background-color:#144272;
-  color:black;
+  background-color:white;
+  color:#205295;
   border-radius: 10px;
   padding: 10px 20px;
   margin-top: 10vh;
@@ -35,8 +35,8 @@
   cursor: pointer;
 }
 .timer{
-  color: white;
-  background-color: #144272;
+  color: #205295;
+  background-color: white;
 }
 .timer:hover{
   cursor: default;

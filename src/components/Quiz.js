@@ -39,7 +39,8 @@ export default function Quiz() {
     }
   };
   return (
-    <div className='quizbody'>
+    <div className='w-full bg-[#205295]'>
+      <div className='quizbody'>
       <div className="utils">
         <button className="timer"><span>{minutes}min {counter%60}s</span></button>
         <button className="submit-btn" onClick={submit}>Submit</button>
@@ -63,6 +64,7 @@ export default function Quiz() {
         <button className="next-btn" onClick={nextQue}>Next</button>
         <button className="save-next-btn" onClick={save_nextQue}>Save and Next</button>
       </div>
+    </div>
     </div>
   )
 }

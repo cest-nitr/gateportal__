@@ -5,7 +5,7 @@ import Profile from './Profile'
 import LeaderBoard from './LeaderBoard'
 import Contact from './Contact'
 import Login from './Login'
-import Signup from './Signup'
+import Signin from './Signin'
 import Contest from './Contest'
 const Router = () => {
   return (
@@ -16,7 +16,7 @@ const Router = () => {
         <Route path='/contest' element={<Contest/>} exact></Route>
         <Route path='/contact' element={<Contact/>} exact></Route>
         <Route path='/login' element={<Login/>} exact></Route>
-        <Route path='/signin' element={<Signup/>} exact></Route>
+        <Route path='/signin' element={<Signin/>} exact></Route>
     </Routes>
   )
 }

@@ -18,9 +18,9 @@ module.exports = {
       'silver': '#ecebff',
       'bubble-gum': '#ff77e9',
       'bermuda': '#78dcca',
-      'primary-color': '#2C74B3',
+      'primary-color': '#205295',
       'secondary-color':'#205295',
-      'tertiary-color': '#144272',
+      'tertiary-color': '#0A2647',
       'bg-color':'#EAFDFC'
     }
   },

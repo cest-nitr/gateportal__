@@ -17,8 +17,8 @@ const Footer = () => {
     <>
     <div className='w-full bg-[#0A2647]'>
         <div className='flex items-center justify-center gap-10 md:gap-20 lg:gap-40 py-6 text-white'>
-            <div className='p-4 md:mr-4 flex items-center justify-center hidden md:block'>
-                <img className='object-fill md:h-48 lg:h-52' src={logo} />
+            <div className='p-4 md:mr-4 items-center justify-center hidden md:block'>
+                <img className='object-fill md:h-48 lg:h-52' src={logo} alt="logo"/>
             </div>
             <div className='p-2 mx-2 hidden'></div>
             <div className='p-2 mx-1 md:mx-3'>

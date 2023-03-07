@@ -6,7 +6,7 @@ import { FaSchool } from "react-icons/fa";
 
 function Profile() {
   return (
-    <div className="flex flex-col m-2 pt-4">
+    <div className="relative flex flex-col mt-[70px] mx-2 pt-4 z-[-100]">
       <div>
         <Button linkto={"/"} targetPage={"Home"} />
         <div className="py-2 flex flex-col sm:flex-row">
